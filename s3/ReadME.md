@@ -1,12 +1,11 @@
-# tagv5.0
+# tagv1.0
 
 ***S3 bucket creation***
 
 ```
 module "s3" {
-   source = "git::git@github.com:aenetworks-gto/infra-ajeeth-test.git//s3?ref=v5.0"
+   source = "git@github.com:AjeethP/test-module.git//s3?ref=v1.0"
    bucket_name = "" # Name of the s3 bucket
-   data_bucket_name = "" # Name of the s3 bucket
  }
 ```
 
@@ -15,9 +14,8 @@ module "s3" {
 
 ```
 module "s3" {
-   source = "git::git@github.com:aenetworks-gto/infra-ajeeth-test.git//s3?ref=v5.0"
+   source = "git@github.com:AjeethP/test-module.git//s3?ref=v1.0"
    bucket_name = "" # Name of the s3 bucket
-   data_bucket_name = "" # Name of the s3 bucket
    source_s3_versioning = "" # Enabled or Disabled
  }
 ```
@@ -27,23 +25,8 @@ module "s3" {
 
 ```
 module "s3" {
-   source = "git::git@github.com:aenetworks-gto/infra-ajeeth-test.git//s3?ref=v5.0"
+   source = "git@github.com:AjeethP/test-module.git//s3?ref=v1.0"
    bucket_name = "" # Name of the s3 bucket
-   data_bucket_name = "" # Name of the s3 bucket
-   s3_bucket_acl = "" # private or public
- }
-```
-
-***S3 bucket creation***
-***S3 bucket versioning***
-***S3 bucket acl***
-
-```
-module "s3" {
-   source = "git::git@github.com:aenetworks-gto/infra-ajeeth-test.git//s3?ref=v5.0"
-   bucket_name = "" # Name of the s3 bucket
-   data_bucket_name = "" # Name of the s3 bucket
-   source_s3_versioning = "" # Enabled or Disabled
    s3_bucket_acl = "" # private or public
  }
 ```
