@@ -12,3 +12,7 @@ variable "source_s3_versioning" {
   description = "Enable versioning for the source s3 bucket"
   default = ""
 }
+
+variable "target_region" {
+  default = ""
+}
