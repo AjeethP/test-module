@@ -20,3 +20,7 @@ variable "role_name" {
 variable "role_creation" {
   default = false
 }
+
+output "role_details" {
+  value = aws_iam_role.role
+}
