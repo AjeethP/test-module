@@ -26,5 +26,5 @@ variable "purpose" {
 }
 
 output "bucket_name" {
-  value = aws_s3_bucket.bucket[0].bucket
+  value = aws_s3_bucket.bucket
 }
